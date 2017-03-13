@@ -13,9 +13,9 @@ Game.init = function(){
 };
 
 Game.preload = function() {
-    game.load.tilemap('map', 'assets/map/commando.json', null, Phaser.Tilemap.TILED_JSON);
-    game.load.spritesheet('commando_tileset', 'assets/map/commando.png',32,32);
-    game.load.image('clown','assets/sprites/clown.png');
+    game.load.tilemap('map', 'assets/map/example_map.json', null, Phaser.Tilemap.TILED_JSON);
+    game.load.spritesheet('tileset', 'assets/map/tilesheet.png',32,32);
+    game.load.image('sprite','assets/sprites/sprite.png');
 };
 
 Game.create = function(){
@@ -23,9 +23,12 @@ Game.create = function(){
     var testKey = game.input.keyboard.addKey(Phaser.Keyboard.ENTER);
     testKey.onDown.add(Client.sendTest, this);
     var map = game.add.tilemap('map');
-    map.addTilesetImage('CommandoMap1-1BG_bank.png', 'commando_tileset');
-    var layer = map.createLayer(0);
-    layer.inputEnabled = true; // Allows clicking on the map
+    map.addTilesetImage('tilesheet', 'tileset'); // tilesheet is the key of the tileset in map's JSON file
+    var layer;
+    for(var i = 0; i < map.layers.length; i++) {
+        layer = map.createLayer(i);
+    }
+    layer.inputEnabled = true; // Allows clicking on the map ; it's enough to do it on the last layer
     layer.events.onInputUp.add(Game.getCoordinates, this);
     Client.askNewPlayer();
 };
@@ -35,7 +38,7 @@ Game.getCoordinates = function(layer,pointer){
 };
 
 Game.addNewPlayer = function(id,x,y){
-    Game.playerMap[id] = game.add.sprite(x,y,'clown');
+    Game.playerMap[id] = game.add.sprite(x,y,'sprite');
 };
 
 Game.movePlayer = function(id,x,y){
