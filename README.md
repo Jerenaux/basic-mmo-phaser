@@ -1,5 +1,7 @@
 # basic-mmo-phaser
-Very basic multiplayer online game example made with Phaser, Node.js and Socket.io
+Very basic multiplayer online game example made with Phaser, Node.js and Socket.io.
+
+The tutorial corresponding to this game can be found [here](http://www.dynetisgames.com/2017/03/06/how-to-make-a-multiplayer-online-game-with-phaser-socket-io-and-node-js/).
 
 ## Installing and running the game
 
