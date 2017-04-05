@@ -1,6 +1,3 @@
-/**
- * Created by Jerome on 03-03-16.
- */
 /*
  * Author: Jerome Renaux
  * E-mail: jerome.renaux@gmail.com

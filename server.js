@@ -12,7 +12,6 @@ app.get('/',function(req,res){
 });
 
 server.lastPlayderID = 0;
-server.playersList = [];
 
 server.listen(process.env.PORT || 8081,function(){
     console.log('Listening on '+server.address().port);
