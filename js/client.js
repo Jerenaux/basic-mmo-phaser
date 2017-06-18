@@ -3,7 +3,7 @@
  */
 
 var Client = {};
-Client.socket = io.connect(); // By default to localhost?
+Client.socket = io.connect();
 
 Client.sendTest = function(){
     console.log("test sent");
