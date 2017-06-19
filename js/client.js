@@ -30,10 +30,10 @@ Client.socket.on('allplayers',function(data){
     Client.socket.on('move',function(data){
         Game.movePlayer(data.id,data.x,data.y);
     });
+
+    Client.socket.on('remove',function(id){
+        Game.removePlayer(id);
+    });
 });
 
 
-
-Client.socket.on('remove',function(id){
-    Game.removePlayer(id);
-});
