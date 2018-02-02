@@ -9,3 +9,6 @@ For the client, Phaser is included in the code (`js/phaser.js`). You will need [
 
 Clone the repository. Inside the newly created directory, run `npm install` to install the Node.js packages listed in `package.json`. Then run `node server.js` to start the server. The server will listen to connections on port `8081`; you can change that behaviour by editing the code. You can access the app by navigating to http://localhost:8081/.
 
+## Donate
+
+If you want to support me to make more open-source code and tutorials like this one, consider having a look at my [donation page](http://www.dynetisgames.com/donate/donation). In particular, take a minute to have a look at my [Patreon page](https://www.patreon.com/jeromerenaux), where you can find a listing of rewards for various levels of recurring contributions!
