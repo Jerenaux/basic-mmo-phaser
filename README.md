@@ -3,6 +3,8 @@ Very basic multiplayer online game example made with Phaser, Node.js and Socket.
 
 The tutorial corresponding to this game can be found [here](http://www.dynetisgames.com/2017/03/06/how-to-make-a-multiplayer-online-game-with-phaser-socket-io-and-node-js/).
 
+:fire: If you are interested in this project, you may also be interested in [Westward](https://github.com/Jerenaux/westward), an open source Javascript MMORPG that I am working on! :rocket:
+
 ## Installing and running the game
 
 For the client, Phaser is included in the code (`js/phaser.js`). You will need [npm](https://www.npmjs.com/) to install the Node.js packages required for the server. To run the server, you'll need to have Node.js installed.
